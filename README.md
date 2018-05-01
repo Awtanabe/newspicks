@@ -49,22 +49,29 @@
 - belongs_to :article
 - has_many   :likes
 
-##Likeテーブル
+##Like
+
+テーブル
 
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
 |comment_id|integer|null: false, foreign_key: true|
 
 ### Association
+- belongs_to :user
 - belongs_to :comment
+
 
 ##Pickテーブル
 
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
 |article_id|integer|null: false, foreign_key: true|
 
 ### Association
+- belongs_to :user
 - belongs_to :article
 
 ##管理者機能
