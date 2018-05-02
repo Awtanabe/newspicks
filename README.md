@@ -7,6 +7,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+|role|integer|
 |profile|integer|
 |avatar|string|
 |comment_id|integer|null: false, foreign_key: true|
@@ -16,6 +17,7 @@
 ### Association
 - has_many :comments
 - has_many :likes
+- has_many :articles
 
 ##articleテーブル
 
