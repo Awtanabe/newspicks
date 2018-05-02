@@ -12,7 +12,6 @@
 |avatar|string|
 
 ### Association
-- has_many :comments
 - has_many :likes
 - has_many :articles
 - has_many :picks
@@ -43,18 +42,6 @@
 - belongs_to :user
 - has_many :picks
 
-## commentsテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|content|text|null: false|
-|article_id|reference|null: false, foreign_key: true|
-|like_id|reference|null: false, foreign_key: true|
-
-### Association
-- belongs_to :article
-- has_many   :likes
-
 ##Likes
 
 テーブル
@@ -62,7 +49,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|reference|null: false, foreign_key: true|
-|comment_id|reference|null: false, foreign_key: true|
+|pick_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
