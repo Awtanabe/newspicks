@@ -8,6 +8,9 @@
 |------|----|-------|
 |name|string|null: false|
 |profile|string|
+|admin|boolean|
+|occupation|string|
+|department|string|
 |avatar|string|
 
 ### Association
@@ -35,7 +38,7 @@
 |content|text|
 |url|integer|null: false|
 |category|integer|null: false|
-|user|reference|null: false,, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -69,8 +72,8 @@
 
 ## 管理者機能
 
--ログインの際に管理者、ユーザーID(0)番のみ、
- 投稿編集が行えるように編集する。
+- ログインの際に管理者、ユーザーID(0)番のみ、
+  投稿編集が行えるように編集する。
 
 
 
