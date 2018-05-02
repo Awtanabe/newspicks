@@ -21,8 +21,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|follower_id|reference|null: false, foreign_key: true|
-|following_id|reference|null: false, foreign_key: true|
+|follower|reference|null: false, foreign_key: true|
+|following|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -36,7 +36,7 @@
 |content|string|
 |url|integer|null: false|
 |category|integer|null: false|
-|user_id|reference|null: false,, foreign_key: true|
+|user|reference|null: false,, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -48,8 +48,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|reference|null: false, foreign_key: true|
-|pick_id|reference|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
+|pick|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -60,8 +60,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|reference|null: false, foreign_key: true|
-|article_id|reference|null: false, foreign_key: true|
+|comment|string|
+|user|reference|null: false, foreign_key: true|
+|article|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
