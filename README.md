@@ -7,8 +7,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email|string|null: false|
-|pasword|integer|null: false|
 |profile|integer|
 |avatar|string|
 |comment_id|integer|null: false, foreign_key: true|
