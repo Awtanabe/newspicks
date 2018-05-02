@@ -10,8 +10,8 @@
 |role|integer|
 |profile|integer|
 |avatar|string|
-|comment_id|integer|null: false, foreign_key: true|
-|like_id|integer|null: false, foreign_key: true|
+|comment_id|reference|null: false, foreign_key: true|
+|like_id|reference|null: false, foreign_key: true|
 
 
 ### Association
@@ -28,9 +28,9 @@
 |content|integer|
 |url|integer|null: false|
 |category|integer|null: false|
-|user_id|integer|null: false,, foreign_key: true|
-|comment_id|integer|null: false, foreign_key: true|
-|pick_id|integer|null: false, foreign_key: true|
+|user_id|reference|null: false,, foreign_key: true|
+|comment_id|reference|null: false, foreign_key: true|
+|pick_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -42,8 +42,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |content|text|null: false|
-|article_id|integer|null: false, foreign_key: true|
-|like_id|integer|null: false, foreign_key: true|
+|article_id|reference|null: false, foreign_key: true|
+|like_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :article
@@ -55,8 +55,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|comment_id|integer|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
+|comment_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -67,8 +67,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|article_id|integer|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
+|article_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
