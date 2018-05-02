@@ -18,8 +18,10 @@
 - has_many :comments
 - has_many :likes
 - has_many :articles
+- has_many :picks
 
-##articleテーブル
+
+## articleテーブル
 
 |Column|Type|Options|
 |------|----|-------|
