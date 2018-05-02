@@ -10,9 +10,6 @@
 |role|integer|
 |profile|integer|
 |avatar|string|
-|comment_id|reference|null: false, foreign_key: true|
-|like_id|reference|null: false, foreign_key: true|
-
 
 ### Association
 - has_many :comments
@@ -21,7 +18,7 @@
 - has_many :picks
 - has_many  :relashonships
 
-## relashonshipテーブル
+## relashonshipsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -31,7 +28,7 @@
 ### Association
 - belongs_to :user
 
-## articleテーブル
+## articlesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -41,12 +38,9 @@
 |url|integer|null: false|
 |category|integer|null: false|
 |user_id|reference|null: false,, foreign_key: true|
-|comment_id|reference|null: false, foreign_key: true|
-|pick_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
-- has_many :comments
 - has_many :picks
 
 ## commentsテーブル
@@ -61,7 +55,7 @@
 - belongs_to :article
 - has_many   :likes
 
-##Like
+##Likes
 
 テーブル
 
@@ -72,10 +66,10 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :comment
+- belongs_to :pick
 
 
-##Pickテーブル
+##Picksテーブル
 
 |Column|Type|Options|
 |------|----|-------|
