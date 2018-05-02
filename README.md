@@ -7,7 +7,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|role|integer|
 |profile|string|
 |avatar|string|
 
@@ -33,7 +32,7 @@
 |------|----|-------|
 |title|string|null: false|
 |image|string|null: false|
-|content|string|
+|content|text|
 |url|integer|null: false|
 |category|integer|null: false|
 |user|reference|null: false,, foreign_key: true|
@@ -60,7 +59,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|comment|string|
+|comment|text|
 |user|reference|null: false, foreign_key: true|
 |article|reference|null: false, foreign_key: true|
 
