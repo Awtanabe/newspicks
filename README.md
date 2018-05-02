@@ -8,7 +8,7 @@
 |------|----|-------|
 |name|string|null: false|
 |profile|string|
-|admin|boolean|
+|admin|boolean|default: false, null: false|
 |occupation|string|
 |department|string|
 |avatar|string|
