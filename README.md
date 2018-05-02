@@ -19,7 +19,17 @@
 - has_many :likes
 - has_many :articles
 - has_many :picks
+- has_many  :relashonships
 
+## relashonshipテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|follower_id|reference|null: false, foreign_key: true|
+|following_id|reference|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
 
 ## articleテーブル
 
