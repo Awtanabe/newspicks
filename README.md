@@ -1,6 +1,6 @@
 # README
 
-#DB設計
+# DB設計
 
 ## usersテーブル
 
@@ -8,7 +8,7 @@
 |------|----|-------|
 |name|string|null: false|
 |role|integer|
-|profile|integer|
+|profile|string|
 |avatar|string|
 
 ### Association
@@ -33,7 +33,7 @@
 |------|----|-------|
 |title|string|null: false|
 |image|string|null: false|
-|content|integer|
+|content|string|
 |url|integer|null: false|
 |category|integer|null: false|
 |user_id|reference|null: false,, foreign_key: true|
@@ -42,7 +42,7 @@
 - belongs_to :user
 - has_many :picks
 
-##Likes
+## Likes
 
 テーブル
 
@@ -56,7 +56,7 @@
 - belongs_to :pick
 
 
-##Picksテーブル
+## Picksテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -67,7 +67,7 @@
 - belongs_to :user
 - belongs_to :article
 
-##管理者機能
+## 管理者機能
 
 -ログインの際に管理者、ユーザーID(0)番のみ、
  投稿編集が行えるように編集する。
