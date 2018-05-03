@@ -1,0 +1,141 @@
+.wrapper{
+  font-size: 16px;
+  background-color: #FFF;
+  padding: 32px 40px;
+  width: 320px;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    color: #00133A;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 8px;
+  }
+
+  .go-login{
+    margin: 12px 0 8px;
+    font-size: 14px;
+  }
+  .go-register{
+    margin: 12px 0 8px;
+    font-size: 14px;
+  }
+
+  .buttons{
+    margin-top: 8px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 2px;
+    color: #FFF;
+    border: none;
+
+    .register-fb{
+      width: 320px;
+      height: 45px;
+      padding-right: 24px;
+      text-align: left;
+      background-color: #3C5B97;
+      color: #FFF;
+      .facebook{
+      margin-left: 20px;
+      }
+    }
+    .login-fb{
+      height: 45px;
+      width: 45%;
+      float: left;
+      display: inline-block;
+      margin-right: 4%;
+      margin-bottom: 12px;
+      padding-right: 24px;
+      text-align: left;
+      background-color: #3C5B97;
+      color: #FFF;
+
+      .facebook{
+      margin-left: 20px;
+      }
+    }
+    .register-tw{
+      width: 320px;
+      height: 45px;
+      padding-right: 24px;
+      text-align: left;
+      background-color: #59ADEC;
+      color: #FFF;
+      .twitter{
+      margin-left: 20px;
+      }
+    }
+    .login-tw{
+      height: 45px;
+      width: 45%;
+      float: left;
+      display: inline-block;
+      margin-right: 4%;
+      margin-bottom: 12px;
+      padding-right: 24px;
+      text-align: left;
+      background-color: #59ADEC;
+      color: #FFF;
+
+      .twitter{
+      margin-left: 20px;
+      }
+    }
+    .or{
+      margin: 16px 4px 4px;
+      position: relative;
+      height: 20px;
+      clear: both;
+      :before{
+        content: '';
+        display: block;
+        background-color: #CCC;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+      }
+      div{
+        background-color: #FFF;
+        position: absolute;
+        margin-top: 0;
+        width: 140px;
+        left: 50%;
+        margin-left: -70px;
+        font-size: 12px;
+        padding-top: 3px;
+        color: #999;
+      }
+    }
+  }
+
+  .form{
+    input{
+      width: 320px;
+      height: 40px;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    .actions input{
+      border: 1px solid #15274d;
+      background-color: #15274d;
+      color: #FFF;
+      border-radius: 2px;
+      margin-top: 16px;
+    }
+  }
+
+  .description{
+    margin-top: 24px;
+    color: #999;
+    font-size: 12px;
+  }
+}
