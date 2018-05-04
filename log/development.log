@@ -3459,3 +3459,50 @@ Completed 200 OK in 125ms (Views: 122.7ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/assets/application.self-30b8075391c3ee97694501ce3d943ab46e439c2fff1dc50237b6434afd4f8980.css?body=1" for ::1 at 2018-05-04 11:38:25 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 11:40:38 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a6a5bfe9112dd8af3140bcdd6fd252f2755683a8c8609d4e4b6279a850b537b4.css?body=1" for ::1 at 2018-05-04 11:40:39 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 11:43:23 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 120ms (Views: 117.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f9459857d3fb5b918c68a4b374984a4ac4955945dfc0229b91bf6c0e1c930def.css?body=1" for ::1 at 2018-05-04 11:43:23 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 11:43:48 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 126ms (Views: 124.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-932109b189f431df02ce60edc2b279c17b562328a733b783fadd8b17df8b3873.css?body=1" for ::1 at 2018-05-04 11:43:48 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 11:44:52 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 121ms (Views: 118.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-1ebe89f2cc21957bb9d6291e61ae0fec75d640b59ea9887a2f1a5e920d0c3d1b.css?body=1" for ::1 at 2018-05-04 11:44:52 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 11:45:02 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.7ms)
