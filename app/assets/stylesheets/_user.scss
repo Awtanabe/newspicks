@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   font-size: 16px;
   background-color: #FFF;
   padding: 32px 40px;
@@ -17,16 +17,16 @@
     margin-bottom: 8px;
   }
 
-  .go-login{
+  .go-login {
     margin: 12px 0 8px;
     font-size: 14px;
   }
-  .go-register{
+  .go-register {
     margin: 12px 0 8px;
     font-size: 14px;
   }
 
-  .buttons{
+  .buttons {
     margin-top: 8px;
     font-size: 14px;
     width: 100%;
@@ -34,18 +34,18 @@
     color: #FFF;
     border: none;
 
-    .register-fb{
+    .register-fb {
       width: 320px;
       height: 45px;
       padding-right: 24px;
       text-align: left;
       background-color: #3C5B97;
       color: #FFF;
-      .facebook{
+      .facebook {
       margin-left: 20px;
       }
     }
-    .login-fb{
+    .login-fb {
       height: 45px;
       width: 45%;
       float: left;
@@ -57,22 +57,22 @@
       background-color: #3C5B97;
       color: #FFF;
 
-      .facebook{
+      .facebook {
       margin-left: 20px;
       }
     }
-    .register-tw{
+    .register-tw {
       width: 320px;
       height: 45px;
       padding-right: 24px;
       text-align: left;
       background-color: #59ADEC;
       color: #FFF;
-      .twitter{
+      .twitter {
       margin-left: 20px;
       }
     }
-    .login-tw{
+    .login-tw {
       height: 45px;
       width: 45%;
       float: left;
@@ -84,16 +84,16 @@
       background-color: #59ADEC;
       color: #FFF;
 
-      .twitter{
+      .twitter {
       margin-left: 20px;
       }
     }
-    .or{
+    .or {
       margin: 16px 4px 4px;
       position: relative;
       height: 20px;
       clear: both;
-      :before{
+      :before {
         content: '';
         display: block;
         background-color: #CCC;
@@ -103,7 +103,7 @@
         left: 0;
         right: 0;
       }
-      div{
+      div {
         background-color: #FFF;
         position: absolute;
         margin-top: 0;
@@ -117,14 +117,14 @@
     }
   }
 
-  .form{
-    input{
+  .form {
+    input {
       width: 320px;
       height: 40px;
       font-size: 12px;
       margin-top: 8px;
     }
-    .actions input{
+    .actions input {
       border: 1px solid #15274d;
       background-color: #15274d;
       color: #FFF;
@@ -133,9 +133,235 @@
     }
   }
 
-  .description{
+  .description {
     margin-top: 24px;
     color: #999;
     font-size: 12px;
   }
+}
+.contents__container {
+  min-width: 400px;
+  .page__content.wide {
+    margin-top: 50px;
+    left: 0;
+    margin-left: 0;
+    .setting__menu.fixed__left {
+      background-color: #FFF;
+      display: block;
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      width: 192px;
+      display: block;
+      .profile {
+        padding: 16px, 16px, 12px;
+        text-align: center;
+        border-bottom: 1px solid #EAEAEA;
+      }
+      .menu__items {
+        overflow-y: auto;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .menu__header {
+          display: block;
+          font-size: 10px;
+          font-weight: 700;
+          color: #777f97;
+          border-bottom: 1px solid #EAEAEA;
+          padding: 32px 16px 8px 24px;
+        }
+        .menu__item {
+          display: block;
+          padding: 16px 16px 16px 24px;
+          border-bottom: 1px solid #EAEAEA;
+          cursor: pointer;
+        }
+        .active {
+          font-weight: 700;
+          color: #15274D;
+        }
+      }
+    }
+    .setting {
+      padding: 24px 32px 0 24px;
+      margin-left: 180px;
+      .setting__verify__alert {
+        width: 844px;
+        height: 104px;
+        margin: auto auto 10px;
+        background-color: #FFF;
+        .row__left {
+          margin-left: 0;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: middle;
+          height: 104px;
+          width: 556px;
+          .main {
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 72px;
+          }
+          .sub {
+            color: #666;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 4px 0 0 72px;
+          }
+        }
+        .row__right {
+          margin-left: 0;
+          margin-right: 0;
+          display: table-cell;
+          vertical-align: middle;
+          height: 104px;
+          width: 288px;
+        }
+        .register__button {
+          width: 136px;
+          height: 40px;
+          margin-right: 72px;
+          margin-left: auto;
+          border: 1px solid #54AB23;
+          color: #54AB23;
+          text-align: center;
+          line-height: 40px;
+          cursor: pointer;
+        }
+      }
+      .setting__container {
+        width: 700px;
+        margin: auto auto 48px;
+        background-color: #FFF;
+        padding: 72px 72px 104px;
+      }
+      h1 {
+        margin: 0;
+        padding: 0 0 24px;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .setting__form {
+        padding-top: 24px;
+        border-top: 1px solid #d9d9d9;
+      }
+      .form__field {
+        margin-bottom: 32px;
+        label {
+          width: 232px;
+          display: inline-block;
+          margin-bottom: 5px;
+          font-size: 16px;
+        }
+        input {
+          height: 18px;
+          width: 440px;
+          color: #222;
+          padding: 10px;
+          border: 1px solid #D9D9D9;
+          border-radius: 2px;
+        }
+        .short {
+          width: 204px;
+        }
+        .no__border {
+          border: none;
+        }
+      }
+      textarea {
+        height: 156px;
+        width: 440px;
+        resize: none;
+        border: 1px solid #EAEAEA;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      label.top {
+        vertical-align: top;
+        margin-top: 8px;
+      }
+      .cover {
+        position: relative;
+        display: inline-block;
+        img {
+          width: 65px;
+          min-height: 65px;
+        }
+        input[type=file] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0;
+          outline: 0;
+          background-color: #fff;
+          cursor: pointer;
+          display: block;
+          width: 150ps;
+        }
+        button {
+          margin-left: 16px;
+          border: 1px solid #EFEFEF;
+          background-color: #EFEFEF;
+          color: #666;
+          border-radius: 2px;
+          transition: all .1s liner;
+          width: 78px;
+          height: 38px;
+        }
+      }
+      .setting__buttons {
+        margin: 32px auto 40px;
+        text-align: center;
+        input {
+          width: 144px;
+          height: 48px;
+          font-size: 14px;
+          position: relative;
+          left: 23px;
+          border: 1px solid #37509C;
+          background-color: #FFF;
+          color: #37509C;
+          transition: all .1s linear;
+          border-radius: 2px;
+        }
+      }
+      .button_to {
+        width: 100%;
+        height: 55px;
+        input{
+          cursor: pointer;
+          font-size: 12px;
+          text-align: center;
+          color: #666;
+          height: 40px;
+          width: 348px;
+          padding: 12px 24px;
+          border-radius: 2px;
+          border: 1px solid #ddd;
+          float: right;
+          transition: all .15s linear;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  height: 50px;
+  background-color: #15274D;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1999;
+  width: auto;
+  min-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 2px #666, 0 0 8px #222;
+  color: #FFF;
 }

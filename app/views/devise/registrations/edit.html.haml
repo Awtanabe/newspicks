@@ -1,36 +1,68 @@
-%h2
-  Edit #{resource_name.to_s.humanize}
-= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    %div
-      Currently waiting confirmation for: #{resource.unconfirmed_email}
-  .field
-    = f.label :password
-    %i (leave blank if you don't want to change it)
-    %br/
-    = f.password_field :password, autocomplete: "off"
-    - if @minimum_password_length
-      %br/
-      %em
-        = @minimum_password_length
-        characters minimum
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
-  .field
-    = f.label :current_password
-    %i (we need your current password to confirm your changes)
-    %br/
-    = f.password_field :current_password, autocomplete: "off"
-  .actions
-    = f.submit "Update"
-%h3 Cancel my account
-%p
-  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-= link_to "Back", :back
+.header NEWS PICKS
+.contents__container
+  .page__content.wide
+    .setting__menu.fixed__left
+      .profile
+        .avatar avatar
+        .name 熊井　誠
+        .job 会社員
+      .menu__items
+        %span.menu__header アカウント
+        %a.menu__item.active ユーザー情報
+        %a.menu__item メールアドレス設定
+        %a.menu__item パスワード設定
+        %span.menu__header 有料サービス
+        %a.menu__item 登録中のプラン
+        %span.menu__header 機能設定
+        %a.menu__item 非表示コメント
+        %a.menu__item 外部サービス設定
+        %a.menu__item キーワード設定
+        %a.menu__item メールマガジン購読設定
+        %a.menu__item 求人応募情報
+
+    .setting.setting__profile
+      .setting__verify__alert
+        .row__left
+          %p.main 実名登録が終了していません
+          %p.sub  登録すると自分のコメントをフォロワー以外にも公開できます。
+        .row__right
+          .register__button 実名登録をする
+      .setting__container.with__alert
+        %h1 アカウント設定
+        .setting__form
+        %h2
+        = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+          = devise_error_messages!
+          .form__field
+            %form
+              %label アイコン
+              .cover
+                %img.cover__image
+                %input{accept: "image/jpeg, image/png", name: "coverImage", type: "file"}
+                %button{type: "button"} 変更する
+          .form__field
+            %label{for:"userName"}ユーザーID
+            %input.short.no__border{value: "sei.kumai"}
+          .form__field
+            %label{for:"userName"}サポートID
+            %input.short.no__border{value: "2636099"}
+            %p ※ サポートデスクへのお問い合わせ時は、こちらをお伝え頂くとスムーズにご案内できます。
+          .form__field
+            %label{for:"lastname"}名前
+            %input.short{name: "lastName", placeholder: "姓", type: "text", value: "熊井"}
+            %input.short.last{name: "firstName", placeholder: "名", type: "text", value: "誠"}
+          .form__field
+            %label{for:"company"}会社名
+            %input{name: "company", type: "text", value: "アルペン"}
+          .form__field
+            %label{for:"title"}役職
+            %input{name: "title", type: "text", value: "平民"}
+          .form__field
+            %label.top{for:"profile"}プロフィール
+            %textarea{maxlength: "2000", name: "profile"} 2636099
+          .setting__buttons
+            = f.submit "保存する"
+          %hr.separator
+          %p
+            #{button_to "NewsPicksのアカウントを完全に削除する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+          = link_to "Back", :back
