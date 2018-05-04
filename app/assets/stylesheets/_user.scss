@@ -1,6 +1,7 @@
+// ログイン画面＆新規登録画面
 .wrapper {
   font-size: 16px;
-  background-color: #FFF;
+  background-color: $grayColor;
   padding: 32px 40px;
   width: 320px;
   position: relative;
@@ -31,21 +32,21 @@
     font-size: 14px;
     width: 100%;
     border-radius: 2px;
-    color: #FFF;
+    color: $grayColor;
     border: none;
 
-    .register-fb {
+    .register__fb {
       width: 320px;
       height: 45px;
       padding-right: 24px;
       text-align: left;
       background-color: #3C5B97;
-      color: #FFF;
+      color: $grayColor;
       .facebook {
       margin-left: 20px;
       }
     }
-    .login-fb {
+    .login__fb {
       height: 45px;
       width: 45%;
       float: left;
@@ -55,24 +56,24 @@
       padding-right: 24px;
       text-align: left;
       background-color: #3C5B97;
-      color: #FFF;
+      color: $grayColor;
 
       .facebook {
       margin-left: 20px;
       }
     }
-    .register-tw {
+    .register__tw {
       width: 320px;
       height: 45px;
       padding-right: 24px;
       text-align: left;
       background-color: #59ADEC;
-      color: #FFF;
+      color: $grayColor;
       .twitter {
       margin-left: 20px;
       }
     }
-    .login-tw {
+    .login__tw {
       height: 45px;
       width: 45%;
       float: left;
@@ -82,7 +83,7 @@
       padding-right: 24px;
       text-align: left;
       background-color: #59ADEC;
-      color: #FFF;
+      color: $grayColor;
 
       .twitter {
       margin-left: 20px;
@@ -103,8 +104,8 @@
       position: relative;
       height: 20px;
       clear: both;
-      .content {
-        background-color: #FFF;
+      &__content {
+        background-color: $grayColor;
         position: absolute;
         margin-top: 0;
         width: 140px;
@@ -124,10 +125,10 @@
       font-size: 12px;
       margin-top: 8px;
     }
-    .actions input {
+    &__actions input {
       border: 1px solid #15274d;
       background-color: #15274d;
-      color: #FFF;
+      color: $grayColor;
       border-radius: 2px;
       margin-top: 16px;
     }
@@ -139,24 +140,26 @@
     font-size: 12px;
   }
 }
-.contents__container {
+
+// ここから下がedit画面
+.contents {
   min-width: 400px;
-  .page__content.wide {
+  &__container {
     margin-top: 50px;
     left: 0;
     margin-left: 0;
-    .setting__menu.fixed__left {
-      background-color: #FFF;
+    .setting__menu {
+      background-color: $grayColor;
       display: block;
       position: fixed;
       top: 50px;
       bottom: 0;
       width: 192px;
       display: block;
-      .profile {
+      &__profile {
         padding: 16px, 16px, 12px;
         text-align: center;
-        border-bottom: 1px solid #EAEAEA;
+        border-bottom: 1px solid $mainBorderColor;
       }
       .menu__items {
         overflow-y: auto;
@@ -165,18 +168,18 @@
         left: 0;
         right: 0;
         bottom: 0;
-        .menu__header {
+        &__header {
           display: block;
           font-size: 10px;
           font-weight: 700;
           color: #777f97;
-          border-bottom: 1px solid #EAEAEA;
+          border-bottom: 1px solid $mainBorderColor;
           padding: 32px 16px 8px 24px;
         }
-        .menu__item {
+        &__item {
           display: block;
           padding: 16px 16px 16px 24px;
-          border-bottom: 1px solid #EAEAEA;
+          border-bottom: 1px solid $mainBorderColor;
           cursor: pointer;
         }
         .active {
@@ -188,11 +191,11 @@
     .setting {
       padding: 24px 32px 0 24px;
       margin-left: 180px;
-      .setting__verify__alert {
+      &__verify__alert {
         width: 844px;
         height: 104px;
         margin: auto auto 10px;
-        background-color: #FFF;
+        background-color: $grayColor;
         .row__left {
           margin-left: 0;
           margin-right: 0;
@@ -232,10 +235,10 @@
           cursor: pointer;
         }
       }
-      .setting__container {
+      &__container {
         width: 700px;
         margin: auto auto 48px;
-        background-color: #FFF;
+        background-color: $grayColor;
         padding: 72px 72px 104px;
       }
       h1 {
@@ -244,7 +247,7 @@
         font-weight: 400;
         font-size: 20px;
       }
-      .setting__form {
+      &__form {
         padding-top: 24px;
         border-top: 1px solid #d9d9d9;
       }
@@ -275,7 +278,7 @@
         height: 156px;
         width: 440px;
         resize: none;
-        border: 1px solid #EAEAEA;
+        border: 1px solid $mainBorderColor;
         padding: 10px;
         border-radius: 2px;
       }
@@ -298,15 +301,15 @@
           min-height: 100%;
           opacity: 0;
           outline: 0;
-          background-color: #fff;
+          background-color: $grayColor;
           cursor: pointer;
           display: block;
           width: 150ps;
         }
         button {
           margin-left: 16px;
-          border: 1px solid #EFEFEF;
-          background-color: #EFEFEF;
+          border: 1px solid $rightGray;
+          background-color: $rightGray;
           color: #666;
           border-radius: 2px;
           transition: all .1s liner;
@@ -314,7 +317,7 @@
           height: 38px;
         }
       }
-      .setting__buttons {
+      &__buttons {
         margin: 32px auto 40px;
         text-align: center;
         input {
@@ -323,9 +326,9 @@
           font-size: 14px;
           position: relative;
           left: 23px;
-          border: 1px solid #37509C;
-          background-color: #FFF;
-          color: #37509C;
+          border: 1px solid $greenColor;
+          background-color: $grayColor;
+          color: $greenColor;
           transition: all .1s linear;
           border-radius: 2px;
         }
@@ -363,6 +366,6 @@
   min-width: 800px;
   margin: auto;
   box-shadow: 0 0 2px #666, 0 0 8px #222;
-  color: #FFF;
+  color: $grayColor;
   text-align: center;  
 }

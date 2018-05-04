@@ -4,17 +4,17 @@
     %span.to アカウントをお持ちでない方は
     %span.link= render "devise/shared/links"
   .buttons
-    %button.login-fb.fb{:onclick => "NP.Facebook.login()", :type => "button"}
+    %button.login__fb.fb{:onclick => "NP.Facebook.login()", :type => "button"}
       %span.facebook Facebook
-    %button.login-tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
+    %button.login__tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
       %span.twitter Twitter
     .or
-      .content または
+      .or__content または
   .form{:style => "top: 120px"}
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .field
+      .form__field
         = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "登録したメールアドレス/NewsPicks ID"
-      .field
+      .form__field
         = f.password_field :password, autocomplete: "off", placeholder: "パスワード"
-      .actions
+      .form__actions
         = f.submit "ログイン"

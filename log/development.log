@@ -3614,3 +3614,286 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered devise/shared/_links.html.haml (0.4ms)
   Rendered devise/registrations/new.html.haml within layouts/application (10.7ms)
 Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-04 13:13:23 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 25ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:13:31 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:13:31 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (4.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 309ms (Views: 287.3ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2018-05-04 13:13:39 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BGC679qTGgKGca1e8TMQNL2KxirgdhCPb7x/p7jMi9FaPwdNxmTUrp2nl1RINkEoTwKE6Z+gGva2bstfPqfk6g==", "user"=>{"email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mUser Load (4.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'sei.kumai@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 16ms (ActiveRecord: 4.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BGC679qTGgKGca1e8TMQNL2KxirgdhCPb7x/p7jMi9FaPwdNxmTUrp2nl1RINkEoTwKE6Z+gGva2bstfPqfk6g==", "user"=>{"email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 145ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2018-05-04 13:13:43 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bemavsx3H59pJo5KdILxLQidpstmfTDSgg/9oAB4NF1bticc0IDRM3LwtEDNh6Ax+hXkCBmrOqtb3UlYhhNbZg==", "user"=>{"email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'sei.kumai@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bemavsx3H59pJo5KdILxLQidpstmfTDSgg/9oAB4NF1bticc0IDRM3LwtEDNh6Ax+hXkCBmrOqtb3UlYhhNbZg==", "user"=>{"email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 133ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2018-05-04 13:13:47 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.6ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (217.8ms)
+Completed 200 OK in 255ms (Views: 253.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2018-05-04 13:13:55 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CwztCBJvRVsZyxnZnN2B/ZvY2t2GPtx79ev4OXy5EaNVU1CqDpiL9wIdI9Ml2NDhaVCYHvno1gIsOUzB+tJ+mA==", "user"=>{"name"=>"kumai", "email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mUser Exists (17.2ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sei.kumai@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `name`, `created_at`, `updated_at`) VALUES ('sei.kumai@gmail.com', '$2a$11$IjUX.qlgOTwWlB2hdzYyBOvgwYrsWngrPvJ47PYoJ5if4DQGUgaA6', 'kumai', '2018-05-04 04:13:55', '2018-05-04 04:13:55')
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2018-05-04 04:13:55', `current_sign_in_at` = '2018-05-04 04:13:55', `last_sign_in_ip` = '::1', `current_sign_in_ip` = '::1', `sign_in_count` = 1, `updated_at` = '2018-05-04 04:13:55' WHERE `users`.`id` = 2[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/edit
+Completed 302 Found in 216ms (ActiveRecord: 49.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:13:56 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:29:27 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Invalid CSS after "      color: ": expected expression (e.g. 1px, bold), was "#$grayColor;"):
+    3:   %head
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:   %body
+  app/assets/stylesheets/_user.scss:70
+  app/assets/stylesheets/application.scss:3
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__2824929669593160581_70352427169260'
+
+
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (131.3ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (145.9ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (271.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:31:32 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 337ms (Views: 334.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2b0a8882818106028ca6a4cd06f94144b25ab9658e3032d247b52e61ad5c117e.css?body=1" for ::1 at 2018-05-04 13:31:32 +0900
+
+
+Started DELETE "/users" for ::1 at 2018-05-04 13:44:24 +0900
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"30Q2zTa9Rjl6xNBLq//kHI4nVX2MRQo96EuysblwcWSBG4tvKkqIlWES6kES+rUAfK8XvvOTAEQxmQZJPxseXw=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  DELETE FROM `users` WHERE `users`.`id` = 2
+  [1m[36m (15.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 21.9ms)
+
+
+Started GET "/" for ::1 at 2018-05-04 13:44:24 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:44:36 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 161ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6ebad483cf527510253fe97e1387425aa237ba904570736c29c6f11d830737a7.css?body=1" for ::1 at 2018-05-04 13:44:37 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:45:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cab2a0285c245d5ae932520d1ac223b8f71c5d771d9e3b52efe04a74212d5f65.css?body=1" for ::1 at 2018-05-04 13:45:09 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:45:30 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 131ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5ea1a1578f04a30aac1ea1fb5cb240685b167c3ffcfb6145e95e3e7a7011010e.css?body=1" for ::1 at 2018-05-04 13:45:30 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:45:46 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (1.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:46:39 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 140ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3ed7254a1ea7950275a15a78cd9b55f171ce76ba9d3d2ddc1ced1399365244f8.css?body=1" for ::1 at 2018-05-04 13:46:39 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 13:46:47 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2018-05-04 13:47:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2018-05-04 13:47:13 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.3ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2018-05-04 13:54:52 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8QoueGL/1n4qkSXWp4dh33otL5Q1G6kqoaLK5bNWoAcVEASqriVaC9YNRlg4oTdb+09SgVgR2czou3KCzCIvXA==", "user"=>{"name"=>"kumai", "email"=>"sei.kumai@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sei.kumai@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `name`, `created_at`, `updated_at`) VALUES ('sei.kumai@gmail.com', '$2a$11$zDG9J9k5S9SsdDo9JuiMfOWay8aOtHZ0FY6bDoIxi.48bLY77DoAK', 'kumai', '2018-05-04 04:54:52', '2018-05-04 04:54:52')
+  [1m[36m (17.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2018-05-04 04:54:52', `current_sign_in_at` = '2018-05-04 04:54:52', `last_sign_in_ip` = '::1', `current_sign_in_ip` = '::1', `sign_in_count` = 1, `updated_at` = '2018-05-04 04:54:52' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/" for ::1 at 2018-05-04 13:54:52 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:54:58 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 163ms (Views: 160.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-979d50937c6851afdd5fed8c8c8185d9c98488cc30e942d871f3993802832b1b.css?body=1" for ::1 at 2018-05-04 13:54:58 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:55:50 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 121ms (Views: 118.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a79ed1bb0d3633063a59d3e84a2767d6ae72510e26a29fb9e2c56d318f6ff03b.css?body=1" for ::1 at 2018-05-04 13:55:51 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:57:06 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:57:51 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 140ms (Views: 138.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-3d3faaefb4f9742e325e56ddc1114d019d45b0bd6119d926275c036027819052.css?body=1" for ::1 at 2018-05-04 13:57:52 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:58:57 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 17.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 13:59:50 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/registrations/edit.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 117ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-8ded04d8256e63e9641b123b173d2c1ebca2af1d00f61cfc5085b15b17683e50.css?body=1" for ::1 at 2018-05-04 13:59:50 +0900
+
+
+Started GET "/users/edit" for ::1 at 2018-05-04 14:00:05 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-09f62bf861aa4d5b17d7ff0cd83423854e45abd0c79bded8a8da17073f32fec4.css?body=1" for ::1 at 2018-05-04 14:00:05 +0900

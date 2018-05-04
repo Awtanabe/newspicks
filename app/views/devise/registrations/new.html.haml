@@ -4,22 +4,22 @@
     %span.to 既にアカウントをお持ちの方は
     %span.link= render "devise/shared/links"
   .buttons
-    %button.register-fb.fb{:onclick => "NP.Facebook.login()", :type => "button"}
+    %button.register__fb.fb{:onclick => "NP.Facebook.login()", :type => "button"}
       %span.facebook Facebookで新規登録
-    %button.register-tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
+    %button.register__tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
       %span.twitter Twitterで新規登録
     .or
-      .content または
+      .or__content または
   .form{:style => "top: 120px"}
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = devise_error_messages!
-      .field
+      .form__field
         = f.text_field :name, autofocus: true, placeholder: "登録名"
-      .field
+      .form__field
         = f.email_field :email, autofocus: true, autocomplete: "email" , placeholder: "登録するメールアドレス"
-      .field
+      .form__field
         = f.password_field :password, autocomplete: "off",  placeholder: "パスワード"
-      .actions
+      .form__actions
         = f.submit "新規登録"
   .description.small
     利用開始をもって《利用規約》と《個人情報保護方針》に
