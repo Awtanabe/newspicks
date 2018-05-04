@@ -306,7 +306,7 @@
           display: block;
           width: 150ps;
         }
-        button {
+        .btn {
           margin-left: 16px;
           border: 1px solid $rightGray;
           background-color: $rightGray;
@@ -333,7 +333,7 @@
           border-radius: 2px;
         }
       }
-      .button_to {
+      p {
         width: 100%;
         height: 55px;
         input{

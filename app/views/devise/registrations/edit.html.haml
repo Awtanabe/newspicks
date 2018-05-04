@@ -8,17 +8,17 @@
         .setting__menu__job 会社員
       .menu__items
         %span.menu__items__header アカウント
-        %a.menu__items__item.active ユーザー情報
-        %a.menu__items__item メールアドレス設定
-        %a.menu__items__item パスワード設定
+        = link_to "ユーザー情報",'a', class: 'menu__items__item active'
+        = link_to "メールアドレス設定",'a', class: 'menu__items__item'
+        = link_to "パスワード設定",'a', class: "menu__items__item"
         %span.menu__items__header 有料サービス
-        %a.menu__items__item 登録中のプラン
+        = link_to "登録中のプラン",'a', class: "menu__items__item"
         %span.menu__items__header 機能設定
-        %a.menu__items__item 非表示コメント
-        %a.menu__items__item 外部サービス設定
-        %a.menu__items__item キーワード設定
-        %a.menu__items__item メールマガジン購読設定
-        %a.menu__items__item 求人応募情報
+        = link_to "非表示コメント",'a', class: "menu__items__item"
+        = link_to "外部サービス設定",'a', class: "menu__items__item"
+        = link_to "キーワード設定",'a', class: "menu__items__item"
+        = link_to "メールマガジン購読設定",'a', class: "menu__items__item"
+        = link_to "求人応募情報",'a', class: "menu__items__item"
 
     .setting.setting__profile
       .setting__verify__alert
@@ -34,32 +34,31 @@
         = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
           = devise_error_messages!
           .form__field
-            %form
-              %label アイコン
-              .cover
-                %img.cover__image
-                %input{accept: "image/jpeg, image/png", name: "coverImage", type: "file"}
-                %button{type: "button"} 変更する
+            = f.label :icon, "アイコン"
+            .cover
+              %img.cover__image
+              = f.file_field :image
+              = link_to "変更する", class: 'btn'
           .form__field
-            %label{for:"userName"}ユーザーID
-            %input.short.no__border{value: "sei.kumai"}
+            = f.label :Name, "ユーザーID"
+            = f.text_field :Name, value: "sei.kumai", :class => "short no__border"
           .form__field
-            %label{for:"userName"}サポートID
-            %input.short.no__border{value: "2636099"}
+            = f.label :ID, "サポートID"
+            = f.text_field :ID, value: "2636099", :class => "short no__border"
             %p ※ サポートデスクへのお問い合わせ時は、こちらをお伝え頂くとスムーズにご案内できます。
           .form__field
-            %label{for:"lastname"}名前
-            %input.short{name: "lastName", placeholder: "姓", type: "text", value: "熊井"}
-            %input.short.last{name: "firstName", placeholder: "名", type: "text", value: "誠"}
+            = f.label :name, "名前"
+            = f.text_field :lastname, placeholder: "姓", type: "text", value: "熊井", :class=>'short'
+            = f.text_field :firstname , placeholder: "名", type: "text", value: "誠", :class=>'short'
           .form__field
-            %label{for:"company"}会社名
-            %input{name: "company", type: "text", value: "アルペン"}
+            = f.label :company, "会社名"
+            = f.text_field :name , type: "text", value: "アルペン"
           .form__field
-            %label{for:"title"}役職
-            %input{name: "title", type: "text", value: "平民"}
+            = f.label :title, "役職"
+            = f.text_field :name, type: "text", value: "平民"
           .form__field
-            %label.top{for:"profile"}プロフィール
-            %textarea{maxlength: "2000", name: "profile"} 2636099
+            = f.label :profile, "プロフィール", :class => "top"
+            = f.text_area :name, maxlength: "2000", value: 2636099
           .setting__buttons
             = f.submit "保存する"
           %hr.separator
