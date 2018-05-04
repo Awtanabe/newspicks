@@ -9,7 +9,7 @@
     %button.register-tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
       %span.twitter Twitterで新規登録
     .or
-      %div または
+      .content または
   .form{:style => "top: 120px"}
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = devise_error_messages!

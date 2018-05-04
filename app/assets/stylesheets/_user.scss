@@ -88,12 +88,7 @@
       margin-left: 20px;
       }
     }
-    .or {
-      margin: 16px 4px 4px;
-      position: relative;
-      height: 20px;
-      clear: both;
-      :before {
+    .or:before {
         content: '';
         display: block;
         background-color: #CCC;
@@ -103,7 +98,12 @@
         left: 0;
         right: 0;
       }
-      div {
+    .or {
+      margin: 16px 4px 4px;
+      position: relative;
+      height: 20px;
+      clear: both;
+      .content {
         background-color: #FFF;
         position: absolute;
         margin-top: 0;

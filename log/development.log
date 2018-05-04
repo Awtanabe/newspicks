@@ -3506,3 +3506,111 @@ Processing by Devise::RegistrationsController#edit as HTML
   [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
   Rendered devise/registrations/edit.html.haml within layouts/application (1.0ms)
 Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users" for ::1 at 2018-05-04 12:09:01 +0900
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FYFFtYTyVGYKwqtA51g4gwMpPEizQ46aMSfB4Hi1EC3WTW5GSgVHLQqGA8fdvlX/bTczfPjg8Rub6LPxjlmMLw=="}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.5ms)[0m  BEGIN
+  [1m[36mSQL (23.0ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  [1m[35m (18.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms (ActiveRecord: 47.4ms)
+
+
+Started GET "/" for ::1 at 2018-05-04 12:09:01 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/kumaisei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:09:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (5.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 146ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:14:18 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 176ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2bc322ca78db49d2691b7b62b1a8085637903a4b9edd61a03b259feec21ca45f.css?body=1" for ::1 at 2018-05-04 12:14:18 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:17:57 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 183ms (Views: 182.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdf99eef1d8093a006e75d6851a427ff16383b24c30c24a2a2b18a64a9c2da0f.css?body=1" for ::1 at 2018-05-04 12:17:58 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:18:43 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 169ms (Views: 167.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b53e37240b4b0cf13ad3fcabd28576c1d7199f79ad09971da7a91ff49a28282d.css?body=1" for ::1 at 2018-05-04 12:18:43 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:18:56 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 143ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-628e5a53d6ddfc49cf77c439f6fa776e87c69c159ff10d91885a890febf6ff07.css?body=1" for ::1 at 2018-05-04 12:18:57 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:20:16 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (1.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:21:12 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1f8be3dd3f6f9b0c2757fe3e32684a4e1dde2440f3f28d08d4b86cd2c1e8403a.css?body=1" for ::1 at 2018-05-04 12:21:12 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:23:04 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 134ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-510d847a532ad75b63e1ab661ee77a4e4775d89355f9836a6ff9cee4977b75d6.css?body=1" for ::1 at 2018-05-04 12:23:04 +0900
+
+
+Started GET "/users/sign_in" for ::1 at 2018-05-04 12:24:20 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 114ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d21c713f44f238c0cf5ff1afbef797ccb1c90e9b08bfc576ff73b407f00478a1.css?body=1" for ::1 at 2018-05-04 12:24:20 +0900
+
+
+Started GET "/users/sign_up" for ::1 at 2018-05-04 12:25:05 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (0.4ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)

@@ -9,7 +9,7 @@
     %button.login-tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
       %span.twitter Twitter
     .or
-      %div または
+      .content または
   .form{:style => "top: 120px"}
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
