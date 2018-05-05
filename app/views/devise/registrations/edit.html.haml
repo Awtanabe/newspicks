@@ -1,0 +1,67 @@
+.header NEWS PICKS
+.contents
+  .contents__container
+    .setting__menu
+      .setting__menu__profile
+        .setting__menu__avatar avatar
+        .setting__menu__name 熊井　誠
+        .setting__menu__job 会社員
+      .menu__items
+        %span.menu__items__header アカウント
+        = link_to "ユーザー情報",'a', class: 'menu__items__item active'
+        = link_to "メールアドレス設定",'a', class: 'menu__items__item'
+        = link_to "パスワード設定",'a', class: "menu__items__item"
+        %span.menu__items__header 有料サービス
+        = link_to "登録中のプラン",'a', class: "menu__items__item"
+        %span.menu__items__header 機能設定
+        = link_to "非表示コメント",'a', class: "menu__items__item"
+        = link_to "外部サービス設定",'a', class: "menu__items__item"
+        = link_to "キーワード設定",'a', class: "menu__items__item"
+        = link_to "メールマガジン購読設定",'a', class: "menu__items__item"
+        = link_to "求人応募情報",'a', class: "menu__items__item"
+
+    .setting.setting__profile
+      .setting__verify__alert
+        .row__left
+          %p.main 実名登録が終了していません
+          %p.sub  登録すると自分のコメントをフォロワー以外にも公開できます。
+        .row__right
+          .register__button 実名登録をする
+      .setting__container.with__alert
+        %h1 アカウント設定
+        .setting__form
+        %h2
+        = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+          = devise_error_messages!
+          .form__field
+            = f.label :icon, "アイコン"
+            .cover
+              %img.cover__image
+              = f.file_field :image
+              = link_to "変更する", class: 'btn'
+          .form__field
+            = f.label :Name, "ユーザーID"
+            = f.text_field :Name, value: "sei.kumai", :class => "short no__border"
+          .form__field
+            = f.label :ID, "サポートID"
+            = f.text_field :ID, value: "2636099", :class => "short no__border"
+            %p ※ サポートデスクへのお問い合わせ時は、こちらをお伝え頂くとスムーズにご案内できます。
+          .form__field
+            = f.label :name, "名前"
+            = f.text_field :lastname, placeholder: "姓", type: "text", value: "熊井", :class=>'short'
+            = f.text_field :firstname , placeholder: "名", type: "text", value: "誠", :class=>'short'
+          .form__field
+            = f.label :company, "会社名"
+            = f.text_field :name , type: "text", value: "アルペン"
+          .form__field
+            = f.label :title, "役職"
+            = f.text_field :name, type: "text", value: "平民"
+          .form__field
+            = f.label :profile, "プロフィール", :class => "top"
+            = f.text_area :name, maxlength: "2000", value: 2636099
+          .setting__buttons
+            = f.submit "保存する"
+          %hr.separator
+          %p
+            #{button_to "NewsPicksのアカウントを完全に削除する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+          = link_to "Back", :back
