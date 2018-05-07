@@ -10,7 +10,8 @@
 */
 html{
     color:#000;
-    background:#FFF;
+    background:#EFEFEF;
+    height: 100%;
 }
 /*
     TODO remove settings on BODY since we can't namespace it.
@@ -47,6 +48,11 @@ td {
     margin:0;
     padding:0;
 }
+
+body{
+    height: 100%;
+}
+
 table {
     border-collapse:collapse;
     border-spacing:0;

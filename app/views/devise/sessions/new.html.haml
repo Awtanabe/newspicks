@@ -1,0 +1,20 @@
+.wrapper
+  %h2 ログイン
+  .go-register
+    %span.to アカウントをお持ちでない方は
+    %span.link= render "devise/shared/links"
+  .buttons
+    %button.login__fb.fb{:onclick => "NP.Facebook.login()", :type => "button"}
+      %span.facebook Facebook
+    %button.login__tw.tw{:onclick => "NP.Twitter.login()", :type => "button"}
+      %span.twitter Twitter
+    .or
+      .or__content または
+  .form{:style => "top: 120px"}
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .form__field
+        = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "登録したメールアドレス/NewsPicks ID"
+      .form__field
+        = f.password_field :password, autocomplete: "off", placeholder: "パスワード"
+      .form__actions
+        = f.submit "ログイン"
