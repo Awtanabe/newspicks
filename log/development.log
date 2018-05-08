@@ -22210,3 +22210,39 @@ Started GET "/" for ::1 at 2018-05-08 13:02:29 +0900
 Processing by ArticlesController#index as HTML
   Rendered articles/index.html.haml within layouts/application (34.5ms)
 Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:10 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:12 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:12 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:13 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:13 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-08 13:07:42 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
