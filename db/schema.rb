@@ -12,8 +12,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20180502082920) do
+
   create_table "users", force: :cascade do |t|
-    t.string   "name",                   limit: 255,              null: false
+    t.string   "name",                   limit: 255, default: "", null: false
     t.integer  "role",                   limit: 4
     t.string   "profile",                limit: 255
     t.string   "avatar",                 limit: 255
@@ -33,4 +34,5 @@ ActiveRecord::Schema.define(version: 20180502082920) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
 end

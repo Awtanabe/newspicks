@@ -22,6 +22,7 @@
   border-bottom: solid 1px #EAEAEA;
   height: 185px;
   box-sizing: border-box;
+  background-color: #FCFCFC;
 }
 .user-header {
   padding-bottom: 12px;
@@ -125,6 +126,7 @@
   right: 0;
   bottom: 0;
   box-sizing: border-box;
+  background-color: #FCFCFC;
   // transition
 }
 .stream-tile {
@@ -184,7 +186,6 @@
   top: 0;
   width:100px;
   height: 100px;
-  // background-color: yellow;
 }
 .sub {
   position: absolute;
@@ -194,7 +195,6 @@
   height: 100%;
   display: inline-block;
   box-sizing: border-box;
-  // background-color: green;
 }
   // ヘッダー
 .header {
@@ -247,9 +247,10 @@
   margin-top: 10px;
   transition: all .15s linear;
 }
-.search-box i {
-  color:white;
-  padding-top:10px;
+.fa-search {
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 .search-wrapper {
   position: absolute;
@@ -260,11 +261,13 @@
   transition: all .15s linear;
 }
 .search {
-  height: 46px;
+  height: 20px;
   color: #FFF;
   background-color: transparent;
   border: none;
   display:inline-block;
+  float: left;
+  padding-top: 15px;
 }
 .clear-index-cache {
   text-align: center;
