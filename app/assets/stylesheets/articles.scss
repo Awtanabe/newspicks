@@ -213,65 +213,65 @@
   box-shadow: 0 0 2px #666, 0 0 8px #222;
 }
 .open-menu{
-position: absolute;
-cursor: pointer;
-left: 25px;
-top: 12px;
-width: 28px;
-opacity: 1;
-display: block;
-float:left;
+  position: absolute;
+  cursor: pointer;
+  left: 25px;
+  top: 12px;
+  width: 28px;
+  opacity: 1;
+  display: block;
+  float:left;
 }
 .fa-bars {
-width: 28px;
-height: 32px;
-color: white;
+  width: 28px;
+  height: 32px;
+  color: white;
 }
 .fa-align-justify{
-color:white;
+  color:white;
 }
 /*-----header left---*/
 .search-box-container {
-position: absolute;
-left: 70px;
-top: 0;
-bottom: 0;
-width: 26%;
+  position: absolute;
+  left: 70px;
+  top: 0;
+  bottom: 0;
+  width: 26%;
 }
 /*検索窓*/
 .search-box {
-background: #3A476B;
-border-radius: 16px;
-width: 100%;
-height: 30px;
-margin-top: 10px;
-transition: all .15s linear;
+  background: #3A476B;
+  border-radius: 16px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  transition: all .15s linear;
 }
 .search-box i {
-color:white;
-padding-top:10px;
+  color:white;
+  padding-top:10px;
 }
 .search-wrapper {
-position: absolute;
-left: 30px;
-right: 0;
-top: 0;
-bottom: 0;
-transition: all .15s linear;
+  position: absolute;
+  left: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all .15s linear;
 }
 .search {
-height: 46px;
-color: #FFF;
-background-color: transparent;
-border: none;
-display:inline-block;
+  height: 46px;
+  color: #FFF;
+  background-color: transparent;
+  border: none;
+  display:inline-block;
 }
 .clear-index-cache {
-text-align: center;
-display: block;
-width: 104px;
-height: 20px;
-margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 104px;
+  height: 20px;
+  margin: 0 auto;
 }
 .logo{
   width: 104px;
@@ -280,10 +280,10 @@ margin: 0 auto;
 }
 /*---header right ---*/
 .right-items {
-position: absolute;
-right: 0;
-top: 0;
-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 .item {
   float: left;
