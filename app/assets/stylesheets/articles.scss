@@ -12,6 +12,7 @@
   bottom: 0;
   width: 192px;
   box-sizing: border-box;
+  background-color: #FCFCFC;
 }
 .stream-container {
   width: 100%;
@@ -19,10 +20,6 @@
 }
 .user-profile-title {
   padding-top: 24px;
-  border-bottom: solid 1px #EAEAEA;
-  height: 185px;
-  box-sizing: border-box;
-  background-color: #FCFCFC;
 }
 .user-header {
   padding-bottom: 12px;
@@ -81,6 +78,7 @@
   color: #666;
   font-size: 8px;
   line-height: 1em;
+  border-bottom: solid 1px #EAEAEA;
 }
 .timeline {
   display: block;
@@ -117,6 +115,7 @@
 .recommend-morning {
   opacity: 1;
   color: #E84D9C;
+  border-bottom: solid 1px #EAEAEA;
 }
 .stream {
   position: absolute;
