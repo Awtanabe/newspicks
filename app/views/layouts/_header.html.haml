@@ -1,0 +1,23 @@
+.open-menu
+  %i.fas.fa-bars
+.search-box-container.global
+  .search-box
+    %i.fas.fa-search
+    .search-wrapper
+      %input#global-search-box.search{ maxlength: "200", placeholder: "検索する", type: "text", value: ""}/
+%a.logo.clear-index-cache{href: "#"}
+  %img.logo{alt: "ロゴ", height: "30", src: "https://newspicks.com/images/logo_type.086ed6f5.png", width: "100"}/
+.right-items
+  .item.self
+    %img.cover-image{alt: "", height: "50", src: "http://mitiyama.com/wp-content/uploads/2017/03/FU008_L.jpg", width: "50"}/
+    .name-block
+      %span.display-name 渡辺 晃史
+      %span.subscription-plan 無料会員
+    %span.caret
+  .item.flag
+    %i.fas.fa-flag
+    .badge{:stlye => "display:none"}
+  .item.pick
+    %i.fas.fa-external-link-alt
+= yield
+
