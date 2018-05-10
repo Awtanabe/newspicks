@@ -23940,3 +23940,829 @@ Processing by ArticlesController#index as HTML
   Rendered layouts/_side_bar.html.haml (11.8ms)
   Rendered layouts/_header.html.haml (0.1ms)
 Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 10:50:43 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_side_bar.html.haml (23.2ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 487ms (Views: 477.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 10:59:41 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (20.6ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 266ms (Views: 264.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a8ef997166f10aa4b2b97646f74dc11c1e449ee578a1fb56e31d6955342aa917.css?body=1" for ::1 at 2018-05-10 10:59:41 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:01:10 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (18.5ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:03:16 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:360
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (147.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (123.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (270.1ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:03:37 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 202ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1fea2515c3511efd461147706bdf4797e672ff3b85c9c3d8e7a5cf3e92dc12e1.css?body=1" for ::1 at 2018-05-10 11:03:37 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:05:32 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (17.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:08:01 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 198ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-05dff08d4ed698018c8fd509a38055e997f6cca4a084a23f59f08d0475d863b6.css?body=1" for ::1 at 2018-05-10 11:08:01 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:19 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (17.2ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 220ms (Views: 219.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9635a9d65ab0ed5acd7e994ccda4d455fb58ee6abf45d29e7a2723d7a50b86f6.css?body=1" for ::1 at 2018-05-10 11:09:19 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:28 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.2ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:29 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:30 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:31 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:09:47 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 200ms (Views: 199.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1d0796b36411e28d04d4fde1c9f24280ebc27f2946266e7ca632bbcf123dce4e.css?body=1" for ::1 at 2018-05-10 11:09:47 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:10:02 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:10:26 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (18.4ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:10:38 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 197ms (Views: 196.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-65afb379d785a6525bd29d691f6b9ff23a60aa9a37a7ef7c1ddab0b38ff3e1b3.css?body=1" for ::1 at 2018-05-10 11:10:39 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:10:39 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:01 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:34 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 193ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7460c992b7bd078fac11daa1e5af84d8c39bd0201557786e754c2e999493b911.css?body=1" for ::1 at 2018-05-10 11:18:34 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:35 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:41 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 208ms (Views: 207.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b36987531d2c8970a6d54b55efb074a4c01ca98a8f4285695aa78336ca1ef26f.css?body=1" for ::1 at 2018-05-10 11:18:41 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:51 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 200ms (Views: 199.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1746bda6a9d0792b428b83d08221690762b1e9f2cffe224a02e4de1ba45e30cc.css?body=1" for ::1 at 2018-05-10 11:18:51 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:18:58 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 195ms (Views: 194.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bde07994ac8edd2a382c861648f2d72d81692d4639385f791ca81b35cffe0234.css?body=1" for ::1 at 2018-05-10 11:18:59 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:20:29 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:360
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (124.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (238.3ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:20:30 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:360
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (134.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (248.2ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:20:47 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.3ms)
+  Rendered layouts/_side_bar.html.haml (16.0ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:21:51 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (14.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:22:35 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (27.2ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 222ms (Views: 221.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ebd1c9401b339ea71780bfc103607da2defed6bcdb0808343dea871860964855.css?body=1" for ::1 at 2018-05-10 11:22:35 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:22:36 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:23:08 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (21.8ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 220ms (Views: 219.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8fe514ffec4b677466c6367e441b26245f0c13d853aaf75e12c23a8e0b22ca31.css?body=1" for ::1 at 2018-05-10 11:23:08 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:23:25 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (24.8ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 235ms (Views: 234.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-58bb5eea6df5eb98420914ba27ff1996614f75f6a67839bcb20472966fd1a877.css?body=1" for ::1 at 2018-05-10 11:23:25 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:23:33 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 201ms (Views: 200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2245a3343ae3d9ef627e79d4ca1743235f8194ec530d2c21af4ab31abd8e665d.css?body=1" for ::1 at 2018-05-10 11:23:33 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:23:34 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:24:04 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 202ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1710a5bab0f2fcec3e3bedc4e6a0b6e60f4f352886828405315974edab748735.css?body=1" for ::1 at 2018-05-10 11:24:04 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:25:07 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (34.3ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 229ms (Views: 228.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-02cf37179a8db6d9d0e1fb919a27b88c2d55008783f5f2571ff05acd0ec7bc71.css?body=1" for ::1 at 2018-05-10 11:25:07 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:25:31 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (17.8ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:25:32 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:25:49 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (13.4ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:25:50 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.2ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:26:37 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (15.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:41:37 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:355
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (104.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (244.4ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:41:52 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (25.7ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 231ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-01702b4843ae34613e8d86a628f8833a2da0bc9614c61150e9c7fd95b235cac0.css?body=1" for ::1 at 2018-05-10 11:41:52 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:42:52 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 199ms (Views: 198.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1e35d9c6ba693d01699beebe2c03e82402cd16cf0d619fd4c950287eba8d169e.css?body=1" for ::1 at 2018-05-10 11:42:53 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:43:53 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 195ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-94c21775fba3a6dc46ffd395313a50d32053ccd3530cf2e26559a77189a2abab.css?body=1" for ::1 at 2018-05-10 11:43:53 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:44:05 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 206ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-eab0ab1cb54d2c2dd149444a89def9287ed06d86ea8740827e39ba8ee4837537.css?body=1" for ::1 at 2018-05-10 11:44:05 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:44:07 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:44:41 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:355
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.7ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.7ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:44:50 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Base-level rules cannot contain the parent-selector-referencing character '&'.):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:156
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (129.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (107.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (240.2ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:45:11 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 213ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-db7665241306b3d355abfbbce0e7e4ab70709e606d1d104cb443a4df35f0b4a5.css?body=1" for ::1 at 2018-05-10 11:45:11 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:45:44 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 205ms (Views: 204.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5ad4f4cc1ba5c8d6d84021e296420d6ac4084c6006414a8aeb0130aba187045c.css?body=1" for ::1 at 2018-05-10 11:45:44 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:45:46 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:45:47 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:46:13 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 198ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ba39edca343ac2ead152665fa834aa337522ccccbc5841bafb449c8d79904380.css?body=1" for ::1 at 2018-05-10 11:46:13 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:46:14 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:48:47 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.2ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:49:48 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:53:31 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:356
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (124.3ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (108.2ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (247.3ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:53:41 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 209ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4eaf2e52dae8f40c2e602fb533ff7d8fb1013a292ea02588fe192d70ca00601a.css?body=1" for ::1 at 2018-05-10 11:53:41 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:55:12 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    3:   %head
+    4:     %meta{ content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    5:     %title Newspicks
+    6:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    7:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    8:     = csrf_meta_tags
+    9:     %link{href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel: "stylesheet"}/
+  app/assets/stylesheets/articles.scss:356
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__68548297864067946_70308526921040'
+
+
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (127.7ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (107.9ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yuyahiroi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (242.7ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 11:55:20 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (26.8ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 226ms (Views: 225.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ff5fc5e83bd355a78557a0f970f66a796e2465f97c99717bab9794ac80fa2fcb.css?body=1" for ::1 at 2018-05-10 11:55:20 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:55:32 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.2ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 194ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3884b76ae8a94bd95954755fb35ebd296b6ad370026a153a086c58bd40912faa.css?body=1" for ::1 at 2018-05-10 11:55:32 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:55:41 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 218ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-460b92c2004f9b960fcb12c4cd42ced6670331381a188b74dadfdb633804291f.css?body=1" for ::1 at 2018-05-10 11:55:41 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:56:09 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 208ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e019677a60b300902cb07b6c2a3c9173f4d9de54cd04078432eca46cf1a071f6.css?body=1" for ::1 at 2018-05-10 11:56:09 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:56:43 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 205ms (Views: 204.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2860346b1b0507370ae081346c1011e622a05fcc037b094f736d199b385a0b2c.css?body=1" for ::1 at 2018-05-10 11:56:43 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:56:55 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (0.1ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 215ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-896c63d378233285ebf59e8db0e3950a79f4a7f76e6a40a00d9eb01f9dd0dc72.css?body=1" for ::1 at 2018-05-10 11:56:55 +0900
+
+
+Started GET "/" for ::1 at 2018-05-10 11:59:11 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (16.2ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 12:00:25 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (16.2ms)
+  Rendered layouts/_header.html.haml (0.1ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-10 12:01:02 +0900
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_side_bar.html.haml (17.1ms)
+  Rendered layouts/_header.html.haml (0.2ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)

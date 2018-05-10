@@ -18,41 +18,43 @@
   width: 100%;
   height: 100%;
 }
-.user-profile-title {
-  padding-top: 24px;
-}
-.user-header {
-  padding-bottom: 12px;
-  border-bottom: solid 1px #EAEAEA;
-}
-.user-icon {
-  width: 48px;
-  height: 48px;
-  margin: auto;
-}
-.user-icon img {
- border-radius:50px;
-}
-.user-info {
-  width: 100%;
-  text-align: center;
-}
-.user-name {
-  font-size: 14px;
-  line-height: 1em;
-  margin-top: 12px;
-  margin-left: 8px;
-  margin-right: 8px;
-  font-weight: 700;
-  height: 14px;
-}
-.user-title {
-  font-size: 10px;
-  color: #666;
-  width: 80%;
-  margin: 3px auto 0;
-  height: 28px;
-  word-break: break-word;
+.user {
+  &__profile {
+    padding-top: 24px;
+  }
+  &__header {
+    padding-bottom: 12px;
+    border-bottom: solid 1px #EAEAEA;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+  }
+  &__icon img {
+  border-radius:50px;
+  }
+  &__info {
+    width: 100%;
+    text-align: center;
+  }
+  &__name {
+    font-size: 14px;
+    line-height: 1em;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 700;
+    height: 14px;
+  }
+  &__title {
+    font-size: 10px;
+    color: #666;
+    width: 80%;
+    margin: 3px auto 0;
+    height: 28px;
+    word-break: break-word;
+  }
 }
 .follow-info {
   width: 100%;
@@ -60,20 +62,18 @@
   box-sizing: border-box;
   display: block;
 }
-.user-profile-following {
+.user__profile--following {
   display: inline-block;
   float: left;
   width: 50%;
   border-right: solid 1px #EAEAEA;
 }
-.user-profile-follower {
-}
-.follow-count {
+.follow__count {
   text-align: center;
   font-size: 18px;
   color: #15274D;
 }
-.follow-caption {
+.follow__caption {
   text-align: center;
   color: #666;
   font-size: 8px;
@@ -88,18 +88,12 @@
   font-size: 12px;
   cursor: pointer;
   color: #222;
-}
-.timeline-title {
-  background-color: #FCFCFC;
-  border-bottom: solid 1px #EAEAEA;
-  padding: 0 16px 6px;
-  text-align: left;
-}
-.timeline-caption {
-  padding: 14px 15px 5px 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: #37509C;
+  &__caption {
+    padding: 14px 15px 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #37509C;
+  }
 }
 .fa-angle-right {
   width: 6px;
@@ -127,48 +121,53 @@
   box-sizing: border-box;
   background-color: #FCFCFC;
   // transition
-}
-.stream-tile {
-  border-bottom: solid 1px #EAEAEA;
-  background-color: #FCFCFC;
-  padding: 16px 0;
-  margin:0 16px;
-}
-.picker-icon {
-  float: left;
-  margin-top: 1px;
+  &__tile {
+    border-bottom: solid 1px #EAEAEA;
+    background-color: #FCFCFC;
+    padding: 16px 0;
+    margin:0 16px;
+  }
 }
 .first-icon {
   height: 28px;
   width:28px;
 }
-.pick-info {
-  font-size: 12px;
+.picker {
+  &__icon {
+    float: left;
+    margin-top: 1px;
+  }
+  &__info {
+    font-size: 12px;
+    &--name {
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 36px;
+      max-height: 16px;
+    }
+    &--date {
+      font-size: 10px;
+      color: #999;
+      margin-left: 36px;
+    }
+  }
+  &__comment {
+    word-break: break-word;
+    max-height: 50px;
+    margin-top: 8px;
+    font-size: 12px;
+  }
 }
-.picker-name {
-  font-size: 12px;
-  font-weight: 700;
-  margin-left: 36px;
-  max-height: 16px;
-}
-.picked-date {
-  font-size: 10px;
-  color: #999;
-  margin-left: 36px;
-}
-.picker-comment {
-  word-break: break-word;
-  max-height: 50px;
-  margin-top: 8px;
-  font-size: 12px;
-}
-.pick-news-info {
-  color: #999;
-  padding-top: 8px;
-  font-size: 12px;
-}
-.news-title {
-  color: #37509C;
+.pick__news {
+  &--title {
+    color: #37509C;
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  &--span {
+    color: #999;
+    font-size: 12px;
+  }
 }
 // メインページ
 .page-content {
@@ -209,7 +208,7 @@
   margin: auto;
   box-shadow: 0 0 2px #666, 0 0 8px #222;
 }
-.open-menu{
+.open-menu {
   position: absolute;
   cursor: pointer;
   left: 25px;
