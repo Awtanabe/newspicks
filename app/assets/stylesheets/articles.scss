@@ -1,0 +1,357 @@
+.contents-container {
+  min-width: 1024px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+.fixed-left {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  width: 192px;
+  box-sizing: border-box;
+  background-color: #FCFCFC;
+}
+.stream-container {
+  width: 100%;
+  height: 100%;
+}
+.user {
+  &__profile {
+    padding-top: 24px;
+  }
+  &__header {
+    padding-bottom: 12px;
+    border-bottom: solid 1px #EAEAEA;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+  }
+  &__icon img {
+  border-radius:50px;
+  }
+  &__info {
+    width: 100%;
+    text-align: center;
+  }
+  &__name {
+    font-size: 14px;
+    line-height: 1em;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 700;
+    height: 14px;
+  }
+  &__title {
+    font-size: 10px;
+    color: #666;
+    width: 80%;
+    margin: 3px auto 0;
+    height: 28px;
+    word-break: break-word;
+  }
+}
+.follow-info {
+  width: 100%;
+  margin-top: 3px;
+  box-sizing: border-box;
+  display: block;
+}
+.user__profile--following {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  border-right: solid 1px #EAEAEA;
+}
+.follow__count {
+  text-align: center;
+  font-size: 18px;
+  color: #15274D;
+}
+.follow__caption {
+  text-align: center;
+  color: #666;
+  font-size: 8px;
+  line-height: 1em;
+  border-bottom: solid 1px #EAEAEA;
+}
+.timeline {
+  display: block;
+  background: #FFF;
+  opacity: .9;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  color: #222;
+  &__caption {
+    padding: 14px 15px 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #37509C;
+  }
+}
+.fa-angle-right {
+  width: 6px;
+  margin-top: 3px;
+  float: right;
+  position: relative;
+  // transition:
+}
+.recommend-area {
+  height: 22px;
+  font-size: 10px;
+}
+.recommend-morning {
+  opacity: 1;
+  color: #E84D9C;
+  border-bottom: solid 1px #EAEAEA;
+}
+.stream {
+  position: absolute;
+  overflow-y: auto;
+  background-color: #FCFCFC;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #FCFCFC;
+  // transition
+  &__tile {
+    border-bottom: solid 1px #EAEAEA;
+    background-color: #FCFCFC;
+    padding: 16px 0;
+    margin:0 16px;
+  }
+}
+.first-icon {
+  height: 28px;
+  width:28px;
+}
+.picker {
+  &__icon {
+    float: left;
+    margin-top: 1px;
+  }
+  &__info {
+    font-size: 12px;
+    &--name {
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 36px;
+      max-height: 16px;
+    }
+    &--date {
+      font-size: 10px;
+      color: #999;
+      margin-left: 36px;
+    }
+  }
+  &__comment {
+    word-break: break-word;
+    max-height: 50px;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+.pick__news {
+  &--title {
+    color: #37509C;
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  &--span {
+    color: #999;
+    font-size: 12px;
+  }
+}
+// メインページ
+.page-content {
+  margin-top: 50px;
+  margin-left: 192px;
+  box-sizing: border-box;
+}
+.eyecatch-container {
+  position: relative;
+  height: 100%;
+}
+.slide {
+  position: relative;
+  top: 0;
+  width:100px;
+  height: 100px;
+}
+.sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33.26%;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+  // ヘッダー
+.header {
+  position: fixed;
+  height: 50px;
+  background: #15274D;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1999;
+  width: auto;
+  min-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 2px #666, 0 0 8px #222;
+}
+.open-menu {
+  position: absolute;
+  cursor: pointer;
+  left: 25px;
+  top: 12px;
+  width: 28px;
+  opacity: 1;
+  display: block;
+  float:left;
+}
+.fa-bars {
+  width: 28px;
+  height: 32px;
+  color: white;
+}
+.fa-align-justify{
+  color:white;
+}
+/*-----header left---*/
+.search-box-container {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  bottom: 0;
+  width: 26%;
+}
+/*検索窓*/
+.search-box {
+  background: #3A476B;
+  border-radius: 16px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  transition: all .15s linear;
+}
+.fa-search {
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.search-wrapper {
+  position: absolute;
+  left: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all .15s linear;
+}
+.search {
+  height: 20px;
+  color: #FFF;
+  background-color: transparent;
+  border: none;
+  display:inline-block;
+  float: left;
+  padding-top: 15px;
+}
+.clear-index-cache {
+  text-align: center;
+  display: block;
+  width: 104px;
+  height: 20px;
+  margin: 0 auto;
+}
+.logo{
+  width: 104px;
+  height: auto;
+  margin-top: 7px;
+}
+/*---header right ---*/
+.right-items {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.item {
+  float: left;
+  cursor: pointer;
+}
+.self {
+  margin: 9px 8px;
+  border-radius: 4px;
+}
+.cover-image {
+  border-radius: 50px;
+  float: left;
+  width: 32px;
+  height: 32px;
+  opacity: .88;
+  margin: 0 8px 0 0;
+}
+.name-block {
+  max-width: 104px;
+  float: left;
+}
+.display-name {
+  display: block;
+  color: #ccd4de;
+  font-size: 11px;
+  margin-top: 0;
+  margin-bottom: -2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.subscription-plan {
+  display: inline-block;
+  color: #ccd4de;
+  background-color: #3a476b;
+  font-size: 8px;
+  padding: 0 6px 1px;
+  border-radius: 2px;
+  transform: scale(0.8);
+  margin-left: -8px;
+}
+.caret {
+  float: left;
+  display: block;
+  width: 3px;
+  border-top: solid 3px #ccd4de;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  margin: 15px 8px 0 16px;
+  box-sizing: border-box;
+}
+.flag {
+  position: relative;
+  padding: 13px 12px;
+  margin: 0 2px;
+}
+.fa-flag {
+  width: 24px;
+  height: 24px;
+  opacity: .8;
+  color: white;
+}
+.pick {
+  padding: 12px 12px 14px;
+  margin: 0 24px 0 8px;
+  color:white;
+}
+.fa-external-link-alt {
+  width: 24px;
+  height: 24px;
+  opacity: .8;
+}

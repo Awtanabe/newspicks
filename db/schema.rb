@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20180509182001) do
   add_index "picks", ["user_id"], name: "fk_rails_34163ce283", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",                   limit: 255,              null: false
+    t.string   "name",                   limit: 255, default: "", null: false
     t.integer  "role",                   limit: 4
     t.string   "profile",                limit: 255
     t.string   "avatar",                 limit: 255
